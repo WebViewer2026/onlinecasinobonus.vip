@@ -51,6 +51,9 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+      section, main {
+        scroll-margin-top: 100px;
+      }
     </style>
 </head>
 <body class="bg-vip-black text-gray-100 min-h-screen flex flex-col justify-between selection:bg-vip-gold selection:text-black">
@@ -82,7 +85,7 @@
         </div>
     </header>
 
-    <!-- Hero Section: Uniquely Crafted -->
+    <!-- Hero Section -->
     <section class="relative py-20 md:py-32 overflow-hidden border-b border-vip-border/40 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-900 via-vip-black to-vip-black">
         <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
             <div class="inline-flex items-center space-x-2 bg-vip-card border border-vip-border rounded-full px-5 py-2 mb-8 text-xs text-vip-gold uppercase tracking-widest shadow-inner">
@@ -122,8 +125,8 @@
             <p class="text-gray-400 text-sm">Select your preferred elite destination below.</p>
         </div>
 
-        <!-- Grid Container (Deals als moderne Kacheln) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Grid Container (2 Platzhalter-Deals) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
             <!-- DEAL TILE #1 (Platzhalter) -->
             <div class="bg-vip-card border border-vip-border hover:border-vip-gold/50 rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 vip-card-glow group">
@@ -205,48 +208,78 @@
                 </div>
             </div>
 
-            <!-- DEAL TILE #3 (Platzhalter) -->
-            <div class="bg-vip-card border border-vip-border hover:border-vip-gold/50 rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 group">
-                <div>
-                    <!-- Badge & Rank -->
-                    <div class="flex justify-between items-center mb-6">
-                        <span class="text-xs font-bold text-gray-400 tracking-widest uppercase border border-vip-border px-3 py-1 rounded-full">Rank #03</span>
-                        <div class="text-vip-gold text-xs space-x-0.5">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-
-                    <!-- Brand Logo / Name -->
-                    <div class="bg-vip-surface border border-vip-border rounded-xl p-6 mb-6 text-center group-hover:border-vip-gold/30 transition-colors">
-                        <span class="font-luxury text-3xl font-bold tracking-wider text-white">DEAL THREE</span>
-                    </div>
-
-                    <!-- Offer Details -->
-                    <div class="space-y-3 mb-6">
-                        <div class="text-xs text-gray-500 uppercase tracking-wider font-semibold">High-Roller Special</div>
-                        <div class="text-xl font-bold text-white">Up to €10,000 Package</div>
-                        <p class="text-xs text-gray-400">Engineered specifically for high-stakes table and slot action.</p>
-                    </div>
-
-                    <!-- Features List -->
-                    <div class="space-y-2 text-xs text-gray-300 mb-8 border-t border-vip-border pt-4">
-                        <div class="flex items-center"><i class="fa-solid fa-check text-vip-gold mr-2"></i> Zero Withdrawal Limits</div>
-                        <div class="flex items-center"><i class="fa-solid fa-check text-vip-gold mr-2"></i> Exclusive Tournaments</div>
-                    </div>
-                </div>
-
-                <!-- CTA Button -->
-                <div>
-                    <div class="text-center text-[11px] text-gray-500 mb-2">No bonus code required</div>
-                    <a href="#" target="_blank" class="w-full bg-vip-gold hover:bg-vip-goldHover text-black font-extrabold py-3.5 px-4 rounded-xl text-center transition-all uppercase tracking-wider text-xs flex items-center justify-center space-x-2 shadow-lg">
-                        <span>CLAIM VIP DEAL</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
         </div>
     </main>
+
+    <!-- VIP Privileges Section (Platzhalter) -->
+    <section id="perks" class="py-20 bg-vip-surface border-t border-b border-vip-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold text-vip-gold tracking-widest uppercase border border-vip-gold/30 px-3 py-1 rounded-full">Elite Advantages</span>
+                <h2 class="font-luxury text-3xl sm:text-4xl font-bold text-white mt-4 mb-3">VIP Privileges</h2>
+                <p class="text-gray-400 text-sm max-w-xl mx-auto">What sets our high-roller tier apart from standard online gaming.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-vip-card border border-vip-border p-8 rounded-2xl">
+                    <div class="text-vip-gold text-2xl mb-4"><i class="fa-solid fa-bolt"></i></div>
+                    <h3 class="text-white font-bold text-lg mb-2">Instant Settlement</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Experience lightning-fast crypto and fiat payouts without artificial processing delays or bureaucratic holds.</p>
+                </div>
+                <div class="bg-vip-card border border-vip-border p-8 rounded-2xl">
+                    <div class="text-vip-gold text-2xl mb-4"><i class="fa-solid fa-headset"></i></div>
+                    <h3 class="text-white font-bold text-lg mb-2">Dedicated Host</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Direct access to private VIP account managers available 24/7 via Telegram or direct line.</p>
+                </div>
+                <div class="bg-vip-card border border-vip-border p-8 rounded-2xl">
+                    <div class="text-vip-gold text-2xl mb-4"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="text-white font-bold text-lg mb-2">Custom Limits</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Tailored betting ceilings and customized table limits designed specifically for high-volume action.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Platzhalter mit 3 Fragen) -->
+    <section id="faq" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="text-center mb-16">
+            <span class="text-xs font-bold text-vip-gold tracking-widest uppercase border border-vip-gold/30 px-3 py-1 rounded-full">Support & Info</span>
+            <h2 class="font-luxury text-3xl sm:text-4xl font-bold text-white mt-4 mb-3">Frequently Asked Questions</h2>
+            <p class="text-gray-400 text-sm">Everything you need to know about our elite tier partnerships.</p>
+        </div>
+
+        <div class="space-y-6">
+            <!-- Question 1 -->
+            <div class="bg-vip-card border border-vip-border rounded-2xl p-6">
+                <h3 class="text-white font-bold text-base mb-2 flex items-center">
+                    <i class="fa-solid fa-circle-question text-vip-gold mr-3"></i> How do I qualify for these exclusive VIP bonuses?
+                </h3>
+                <p class="text-gray-400 text-xs leading-relaxed pl-7">
+                    Simply register through our verified partner links on this platform. Most top-tier deals require no bonus code and automatically apply your enhanced status upon your first qualifying deposit.
+                </p>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="bg-vip-card border border-vip-border rounded-2xl p-6">
+                <h3 class="text-white font-bold text-base mb-2 flex items-center">
+                    <i class="fa-solid fa-circle-question text-vip-gold mr-3"></i> Are these platforms fully licensed and secure?
+                </h3>
+                <p class="text-gray-400 text-xs leading-relaxed pl-7">
+                    Yes. Every operator featured in our curated grid undergoes rigorous vetting for regulatory compliance, financial stability, and provably secure cryptographic data protection.
+                </p>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="bg-vip-card border border-vip-border rounded-2xl p-6">
+                <h3 class="text-white font-bold text-base mb-2 flex items-center">
+                    <i class="fa-solid fa-circle-question text-vip-gold mr-3"></i> Can I request custom high-roller table limits?
+                </h3>
+                <p class="text-gray-400 text-xs leading-relaxed pl-7">
+                    Absolutely. Once you connect with your assigned VIP account manager through our partner links, you can negotiate bespoke limits tailored specifically to your gameplay volume.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-vip-surface border-t border-vip-border py-12 text-xs text-gray-500">
